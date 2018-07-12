@@ -13,6 +13,7 @@
 		28829EA920F7A41400D148DF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28829EA820F7A41400D148DF /* Assets.xcassets */; };
 		28829EAC20F7A41400D148DF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 28829EAA20F7A41400D148DF /* LaunchScreen.storyboard */; };
 		28829EAF20F7A41400D148DF /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 28829EAE20F7A41400D148DF /* main.m */; };
+		28829EB720F7A44300D148DF /* rrr.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28829EB620F7A44300D148DF /* rrr.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,8 @@
 		28829EAB20F7A41400D148DF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		28829EAD20F7A41400D148DF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		28829EAE20F7A41400D148DF /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		28829EB520F7A44200D148DF /* fkvgkigbik-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "fkvgkigbik-Bridging-Header.h"; sourceTree = "<group>"; };
+		28829EB620F7A44300D148DF /* rrr.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = rrr.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,11 +65,13 @@
 				28829EA020F7A40A00D148DF /* AppDelegate.m */,
 				28829EA220F7A40A00D148DF /* ViewController.h */,
 				28829EA320F7A40A00D148DF /* ViewController.m */,
+				28829EB620F7A44300D148DF /* rrr.swift */,
 				28829EA520F7A40A00D148DF /* Main.storyboard */,
 				28829EA820F7A41400D148DF /* Assets.xcassets */,
 				28829EAA20F7A41400D148DF /* LaunchScreen.storyboard */,
 				28829EAD20F7A41400D148DF /* Info.plist */,
 				28829EAE20F7A41400D148DF /* main.m */,
+				28829EB520F7A44200D148DF /* fkvgkigbik-Bridging-Header.h */,
 			);
 			path = fkvgkigbik;
 			sourceTree = "<group>";
@@ -102,6 +107,7 @@
 				TargetAttributes = {
 					28829E9B20F7A40A00D148DF = {
 						CreatedOnToolsVersion = 9.4;
+						LastSwiftMigration = 0940;
 					};
 				};
 			};
@@ -143,6 +149,7 @@
 			files = (
 				28829EA420F7A40A00D148DF /* ViewController.m in Sources */,
 				28829EAF20F7A41400D148DF /* main.m in Sources */,
+				28829EB720F7A44300D148DF /* rrr.swift in Sources */,
 				28829EA120F7A40A00D148DF /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -282,15 +289,22 @@
 		28829EB320F7A41400D148DF /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MP58ZZ2W3L;
 				INFOPLIST_FILE = fkvgkigbik/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = dfjhhj.fkvgkigbik;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "fkvgkigbik/fkvgkigbik-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -298,15 +312,21 @@
 		28829EB420F7A41400D148DF /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = MP58ZZ2W3L;
 				INFOPLIST_FILE = fkvgkigbik/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = dfjhhj.fkvgkigbik;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "fkvgkigbik/fkvgkigbik-Bridging-Header.h";
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

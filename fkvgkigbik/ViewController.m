@@ -7,7 +7,7 @@
 //
 
 #import "ViewController.h"
-
+#import "fkvgkigbik-Swift.h"
 @interface ViewController ()
 
 @end
@@ -17,6 +17,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    
+     UIView*gg = [[UIView alloc]initWithFrame:self.view.frame];
+    
+    [gg setBackgroundColor : [MZAActiveState shared].color];
+    
+    [self.view addSubview:gg];
+
 }
 
 
